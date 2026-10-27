@@ -1,0 +1,23 @@
+{
+  "variantName": "tabs-tile-carousel",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Pill tabs (e.g. Features / In The Box) whose panels are horizontally scrolling carousels of tall photo tiles with overlaid text",
+    "summary": "Pill tabs whose panels are horizontal carousels of tall photo tiles with overlaid text (first tile text-only)"
+  },
+  "contentPattern": {
+    "summary": "Tabs: 'Features' (intro tile + 10 feature tiles) and 'In The Box' (intro tile + 5 item tiles)",
+    "structure": "one row per tab; cell 1: tab label; cell 2: panel content as rich text. Each tile starts with its image, followed by its H3 title and paragraph; any heading/text before the first image becomes a text-only intro tile"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": [
+    {
+      "url": "https://www.vuse.com/en-gb/products/vuse-ultra-device-mclaren",
+      "section": "section-5",
+      "selector": "#shopify-section-template--19268937547938__carousel_b_ybCUtb"
+    }
+  ],
+  "reuseGuidance": "Use for tabbed feature or what's-in-the-box showcases made of image tiles. For tabbed product listings with prices and a View all link use tabs-product-cards; for plain tabbed text use the base tabs block."
+}

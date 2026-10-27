@@ -1,0 +1,187 @@
+/* Section layout: heading (default content) above the FAQ list, beside it on wide screens */
+.section.accordion-load-more-container > .default-content-wrapper:has(+ .accordion-load-more-wrapper) h2 {
+  max-width: 300px;
+  margin: 0 0 24px;
+  font-size: 34px;
+  line-height: 1.1;
+}
+
+.section.accordion-load-more-container .accordion-load-more-heading-emphasis {
+  font-weight: var(--strong-font-weight);
+}
+
+/* items */
+.accordion-load-more .accordion-load-more-item {
+  position: relative;
+  border-radius: 4px;
+}
+
+.accordion-load-more .accordion-load-more-item:nth-of-type(odd) {
+  background-color: rgb(246 246 246);
+}
+
+/* 2px underline that wipes in from the left on hover / when open */
+.accordion-load-more .accordion-load-more-item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.2s var(--transition-ease);
+  pointer-events: none;
+}
+
+.accordion-load-more .accordion-load-more-item:hover::after,
+.accordion-load-more .accordion-load-more-item[open]::after {
+  transform: scaleX(1);
+}
+
+.accordion-load-more .accordion-load-more-item > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--text-color);
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion-load-more .accordion-load-more-item > summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-load-more .accordion-load-more-item > summary p {
+  flex: 1 1 0%;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accordion-load-more .accordion-load-more-item-icon,
+.accordion-load-more .accordion-load-more-button-icon {
+  display: flex;
+  flex: none;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s var(--transition-ease);
+}
+
+.accordion-load-more .accordion-load-more-item-icon svg,
+.accordion-load-more .accordion-load-more-button-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* plus turns into a close (x) icon when the item is open */
+.accordion-load-more .accordion-load-more-item[open] .accordion-load-more-item-icon {
+  transform: rotate(45deg);
+}
+
+.accordion-load-more .accordion-load-more-item-body {
+  padding: 0 24px 16px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20.8px;
+}
+
+.accordion-load-more .accordion-load-more-item > .accordion-load-more-item-body p {
+  margin: 0;
+}
+
+.accordion-load-more .accordion-load-more-item:not([open]) .accordion-load-more-item-body,
+.accordion-load-more .accordion-load-more-item[hidden] {
+  display: none;
+}
+
+/* Load More: ghost button, label underline wipe + icon nudge on hover */
+.accordion-load-more .accordion-load-more-actions {
+  margin-top: 24px;
+}
+
+.accordion-load-more .accordion-load-more-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 0 0 24px;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-size: var(--button-font-size);
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accordion-load-more .accordion-load-more-button-label {
+  position: relative;
+  padding-bottom: 2px;
+  line-height: 25px;
+}
+
+.accordion-load-more .accordion-load-more-button-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--text-color);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.2s var(--transition-ease);
+}
+
+.accordion-load-more .accordion-load-more-button:hover .accordion-load-more-button-label::after {
+  transform: scaleX(1);
+}
+
+.accordion-load-more .accordion-load-more-button:hover .accordion-load-more-button-icon {
+  transform: translateX(8px);
+}
+
+@media (width >= 900px) {
+  .section.accordion-load-more-container > .default-content-wrapper:has(+ .accordion-load-more-wrapper) h2 {
+    max-width: 388px;
+    font-size: var(--heading-font-size-xl);
+  }
+}
+
+@media (width >= 1440px) {
+  .section.accordion-load-more-container:has(> .default-content-wrapper + .accordion-load-more-wrapper) {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    box-sizing: border-box;
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+    padding-inline: var(--content-padding);
+  }
+
+  main .section.accordion-load-more-container > .default-content-wrapper:has(+ .accordion-load-more-wrapper) {
+    flex: 0 0 400px;
+    margin: 0;
+    padding: 0;
+  }
+
+  main .section.accordion-load-more-container > .default-content-wrapper:has(+ .accordion-load-more-wrapper) h2 {
+    max-width: none;
+    margin: 0;
+  }
+
+  main .section.accordion-load-more-container > .default-content-wrapper + .accordion-load-more-wrapper {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  }
+}

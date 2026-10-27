@@ -24,7 +24,19 @@
       "table",
       "text",
       "title",
-      "video"
+      "video",
+      "accordion-load-more",
+      "carousel-gallery",
+      "columns-product-info",
+      "hero-foreground",
+      "tabs-product-cards",
+      "tabs-tile-carousel"
+    ]
+  },
+  {
+    "id": "accordion-load-more",
+    "components": [
+      "accordion-load-more-item"
     ]
   },
   {
@@ -40,9 +52,21 @@
     ]
   },
   {
+    "id": "carousel-gallery",
+    "components": [
+      "carousel-gallery-item"
+    ]
+  },
+  {
     "id": "carousel",
     "components": [
       "carousel-item"
+    ]
+  },
+  {
+    "id": "columns-product-info",
+    "components": [
+      "column"
     ]
   },
   {
@@ -82,6 +106,18 @@
     "id": "table-4-columns",
     "components": [
       "table-col-4"
+    ]
+  },
+  {
+    "id": "tabs-product-cards",
+    "components": [
+      "tabs-product-cards-item"
+    ]
+  },
+  {
+    "id": "tabs-tile-carousel",
+    "components": [
+      "tabs-tile-carousel-item"
     ]
   },
   {

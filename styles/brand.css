@@ -1,0 +1,62 @@
+/* Brand tokens extracted from https://www.vuse.com/en-gb (see migration-work/brand.json) */
+:root {
+  /* colors */
+  --background-color: #fff;
+  --light-color: #f5f5f5;
+  --dark-color: #1d1d1b;
+  --text-color: #1d1d1b;
+  --link-color: #1d1d1b;
+  --link-hover-color: #1d1d1b;
+  --overlay-background-color: rgb(29 29 27 / 60%);
+  --button-primary-background: #1d1d1b;
+  --button-primary-hover-background: #323232;
+  --button-primary-color: #fff;
+  --border-color: #d9d9d9;
+
+  /* fonts */
+  --body-font-family: mundial, mundial-fallback, 'Open Sans', sans-serif;
+  --heading-font-family: mundial, mundial-fallback, 'Open Sans', sans-serif;
+  --body-font-weight: 200;
+  --heading-font-weight: 200;
+  --strong-font-weight: 400;
+
+  /* body sizes */
+  --body-font-size-m: 16px;
+  --body-font-size-s: 14px;
+  --body-font-size-xs: 12px;
+  --button-font-size: 18px;
+
+  /* heading sizes (mobile) */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 28px;
+  --heading-font-size-l: 20px;
+  --heading-font-size-m: 18px;
+  --heading-font-size-s: 16px;
+  --heading-font-size-xs: 16px;
+
+  /* spacing */
+  --section-spacing: 24px;
+  --content-max-width: 1440px;
+  --content-padding: 24px;
+  --button-radius: 4px;
+  --transition-ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+  /* nav heights */
+  --nav-height: 59px;
+  --breadcrumbs-height: 34px;
+  --header-height: var(--nav-height);
+}
+
+@media (width >= 900px) {
+  :root {
+    /* heading sizes (desktop) */
+    --heading-font-size-xxl: 44px;
+    --heading-font-size-xl: 44px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
+    --section-spacing: 48px;
+    --content-padding: 62px;
+  }
+}

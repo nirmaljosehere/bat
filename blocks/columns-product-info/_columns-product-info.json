@@ -1,0 +1,50 @@
+{
+  "definitions": [
+    {
+      "title": "Columns Product Info",
+      "id": "columns-product-info",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/columns/v1/columns",
+            "template": {
+              "columns": "2",
+              "rows": "1",
+              "name": "Columns Product Info",
+              "model": "columns-product-info"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "columns-product-info",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "columns",
+          "value": "",
+          "label": "Columns"
+        },
+        {
+          "component": "text",
+          "valueType": "number",
+          "name": "rows",
+          "value": "",
+          "label": "Rows"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "columns-product-info",
+      "components": [
+        "column"
+      ]
+    }
+  ]
+}

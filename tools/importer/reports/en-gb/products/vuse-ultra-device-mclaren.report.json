@@ -1,0 +1,22 @@
+{
+  "status": "success",
+  "url": "https://www.vuse.com/en-gb/products/vuse-ultra-device-mclaren",
+  "path": "en-gb/products/vuse-ultra-device-mclaren",
+  "timestamp": "2026-10-27T11:54:57.031Z",
+  "title": "Vuse Ultra | Smart Vape with App Control | Vuse UK",
+  "template": "products",
+  "blocks": [
+    "carousel-gallery",
+    "carousel-gallery",
+    "columns-product-info",
+    "columns-product-info",
+    "hero-foreground",
+    "hero-foreground",
+    "accordion-load-more",
+    "accordion-load-more",
+    "tabs-tile-carousel",
+    "tabs-tile-carousel",
+    "tabs-product-cards",
+    "tabs-product-cards"
+  ]
+}

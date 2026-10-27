@@ -142,6 +142,25 @@
     ]
   },
   {
+    "id": "accordion-load-more-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "summary",
+        "value": "",
+        "label": "Summary"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "accordion-item",
     "fields": [
       {
@@ -186,6 +205,39 @@
     ]
   },
   {
+    "id": "carousel-gallery-item",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "media_image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_imageAlt",
+        "value": "",
+        "label": "Image Alt"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "media_video",
+        "value": "",
+        "label": "Video URL (optional, image becomes poster)"
+      },
+      {
+        "component": "richtext",
+        "name": "content_text",
+        "value": "",
+        "label": "Caption",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "carousel-item",
     "fields": [
       {
@@ -208,6 +260,25 @@
         "value": "",
         "label": "Text",
         "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "columns-product-info",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "columns",
+        "value": "",
+        "label": "Columns"
+      },
+      {
+        "component": "text",
+        "valueType": "number",
+        "name": "rows",
+        "value": "",
+        "label": "Rows"
       }
     ]
   },
@@ -278,6 +349,53 @@
         "component": "aem-content",
         "name": "reference",
         "label": "Reference"
+      }
+    ]
+  },
+  {
+    "id": "hero-foreground",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "background_image",
+        "label": "Background Image (video poster)",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "background_imageAlt",
+        "label": "Background Image Alt",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "background_video",
+        "label": "Background Video URL (optional)",
+        "value": ""
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "content_image",
+        "label": "Foreground Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "content_imageAlt",
+        "label": "Foreground Image Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "valueType": "string",
+        "name": "content_text",
+        "label": "Text",
+        "value": ""
       }
     ]
   },
@@ -512,6 +630,74 @@
         "valueType": "string",
         "name": "column4text",
         "label": "Column4"
+      }
+    ]
+  },
+  {
+    "id": "tabs-product-cards-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Tab Title",
+        "description": "Items with the same tab title are grouped into one tab"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "value": "",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tabs-tile-carousel-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "title",
+        "value": "",
+        "label": "Tab Title",
+        "description": "Items with the same tab title are grouped into one tab"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "value": "",
+        "label": "Image Alt Text"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
       }
     ]
   },

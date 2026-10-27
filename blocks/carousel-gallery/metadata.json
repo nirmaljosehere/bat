@@ -1,0 +1,23 @@
+{
+  "variantName": "carousel-gallery",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Horizontally scrolling product media gallery (images and an optional video) with previous/next arrows",
+    "summary": "Image-only media gallery, ~3 square slides visible on desktop, first slide may be a video with a poster image"
+  },
+  "contentPattern": {
+    "summary": "Gallery of product media slides (1 video with poster + 6 images), image-only, horizontal scroll with arrow",
+    "structure": "one row per slide; cell 1: image (optionally plus a link or plain-text URL to an .mp4 video, the image becoming the video poster); cell 2 (optional): caption text"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": [
+    {
+      "url": "https://www.vuse.com/en-gb/products/vuse-ultra-device-mclaren",
+      "section": "section-1",
+      "selector": "#shopify-section-template--19268937547938__carousel_a_98bErk"
+    }
+  ],
+  "reuseGuidance": "Use for multi-image product/media galleries where several square slides are visible at once. For full-width single-slide promotional carousels with overlaid text, use the base carousel block."
+}

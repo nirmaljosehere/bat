@@ -83,6 +83,38 @@
       "id": "blocks",
       "components": [
         {
+          "title": "Accordion Load More",
+          "id": "accordion-load-more",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Accordion Load More",
+                  "filter": "accordion-load-more"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Accordion Load More Item",
+          "id": "accordion-load-more-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Accordion Load More Item",
+                  "model": "accordion-load-more-item",
+                  "summary": "Lorem Ipsum",
+                  "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur volutpat consequat dui, sit amet ...</p>"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Accordion",
           "id": "accordion",
           "plugins": {
@@ -145,6 +177,36 @@
           }
         },
         {
+          "title": "Carousel Gallery",
+          "id": "carousel-gallery",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Carousel Gallery",
+                  "filter": "carousel-gallery"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Carousel Gallery Item",
+          "id": "carousel-gallery-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Carousel Gallery Item",
+                  "model": "carousel-gallery-item"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Carousel",
           "id": "carousel",
           "plugins": {
@@ -169,6 +231,23 @@
                 "template": {
                   "name": "Carousel Slide",
                   "model": "carousel-item"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Columns Product Info",
+          "id": "columns-product-info",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/columns/v1/columns",
+                "template": {
+                  "columns": "2",
+                  "rows": "1",
+                  "name": "Columns Product Info",
+                  "model": "columns-product-info"
                 }
               }
             }
@@ -229,6 +308,21 @@
                 "template": {
                   "name": "Fragment",
                   "model": "fragment"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Hero Foreground",
+          "id": "hero-foreground",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Hero Foreground",
+                  "model": "hero-foreground"
                 }
               }
             }
@@ -376,6 +470,68 @@
                   "column2text": "Column2",
                   "column3text": "Column3",
                   "column4text": "Column4"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Product Cards",
+          "id": "tabs-product-cards",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Tabs Product Cards",
+                  "filter": "tabs-product-cards"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Product Cards Item",
+          "id": "tabs-product-cards-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tabs Product Cards Item",
+                  "model": "tabs-product-cards-item",
+                  "title": "Tab Name"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Tile Carousel",
+          "id": "tabs-tile-carousel",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block",
+                "template": {
+                  "name": "Tabs Tile Carousel",
+                  "filter": "tabs-tile-carousel"
+                }
+              }
+            }
+          }
+        },
+        {
+          "title": "Tabs Tile Carousel Item",
+          "id": "tabs-tile-carousel-item",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/franklin/components/block/v1/block/item",
+                "template": {
+                  "name": "Tabs Tile Carousel Item",
+                  "model": "tabs-tile-carousel-item",
+                  "title": "Tab Name"
                 }
               }
             }

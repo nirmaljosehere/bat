@@ -1,0 +1,234 @@
+/* columns-product-info: product summary (title, price, CTA, USPs, description) */
+
+/* cells only group authored content; their children are placed on the row grid */
+.columns-product-info > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "heading"
+    "price"
+    "actions"
+    "features"
+    "description";
+  align-items: start;
+  color: rgb(29 29 27);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20.8px;
+}
+
+.columns-product-info > div > div {
+  display: contents;
+}
+
+/* heading: rating, title, subtitle */
+.columns-product-info .columns-product-info-heading {
+  grid-area: heading;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 16px;
+  min-width: 0;
+}
+
+.columns-product-info .columns-product-info-heading > * {
+  margin: 0;
+}
+
+.columns-product-info .columns-product-info-rating {
+  display: flex;
+  align-items: center;
+  color: rgb(80 80 80);
+  height: 15px;
+  font-size: 12px;
+  line-height: 15.6px;
+}
+
+.columns-product-info .columns-product-info-rating::before {
+  content: "";
+  display: block;
+  flex: 0 0 auto;
+  width: 76px;
+  height: 15px;
+  margin-right: 4px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13.333 10'%3E%3Cpath d='M4.52257 0.417969C4.60051 0.194413 4.91728 0.194414 4.99522 0.417969L5.81944 2.78906C5.92244 3.08537 6.19917 3.28658 6.5128 3.29297L9.02159 3.34375C9.25848 3.34858 9.35667 3.6497 9.16808 3.79297L7.16808 5.30957C6.9181 5.49909 6.81161 5.82475 6.90245 6.125L7.62999 8.52734C7.69843 8.75405 7.44264 8.93972 7.24815 8.80469L5.18761 7.37109C4.93012 7.19192 4.58767 7.19192 4.33018 7.37109L2.26964 8.80469C2.07515 8.93972 1.81936 8.75405 1.8878 8.52734L2.61534 6.125C2.70618 5.82475 2.59969 5.49909 2.34972 5.30957L0.349716 3.79297C0.161122 3.6497 0.25931 3.34858 0.496201 3.34375L3.00499 3.29297C3.31862 3.28658 3.59535 3.08537 3.69835 2.78906L4.52257 0.417969Z' fill='none' stroke='%23ffb74d' stroke-width='0.5'/%3E%3C/svg%3E");
+  background-position: left center;
+  background-repeat: repeat-x;
+  background-size: 16px 12px;
+}
+
+.columns-product-info .columns-product-info-title {
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 40.8px;
+}
+
+.columns-product-info .columns-product-info-subtitle {
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+/* price */
+.columns-product-info .columns-product-info-price {
+  grid-area: price;
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26.4px;
+}
+
+/* add to basket */
+.columns-product-info .columns-product-info-actions {
+  grid-area: actions;
+  display: block;
+  margin: 0 0 12px;
+}
+
+.columns-product-info .columns-product-info-actions strong {
+  display: block;
+  font-weight: inherit;
+}
+
+main .columns-product-info .columns-product-info-actions a.button:any-link {
+  display: block;
+  width: 100%;
+}
+
+/* USP feature pills */
+.columns-product-info .columns-product-info-features {
+  grid-area: features;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  border: 1px solid rgb(207 207 207);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.columns-product-info .columns-product-info-feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 8px;
+  background-color: rgb(246 246 246);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18.2px;
+}
+
+.columns-product-info .columns-product-info-feature:not(:last-child) {
+  border-bottom: 1px solid rgb(207 207 207);
+}
+
+.columns-product-info .columns-product-info-feature-icon,
+.columns-product-info .columns-product-info-feature-icon img {
+  display: block;
+  flex: 0 0 auto;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+/* description + read more */
+.columns-product-info .columns-product-info-description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+
+.columns-product-info .columns-product-info-description p {
+  margin: 0;
+}
+
+.columns-product-info .columns-product-info-more[hidden] {
+  display: none;
+}
+
+.columns-product-info .columns-product-info-read-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgb(29 29 27);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.columns-product-info .columns-product-info-read-more-label {
+  position: relative;
+  display: block;
+  padding: 0 0 2px;
+  line-height: 25px;
+}
+
+.columns-product-info .columns-product-info-read-more-label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(29 29 27);
+  transform: scaleX(0);
+  transform-origin: 0 0.5px;
+  transition: transform 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.columns-product-info .columns-product-info-read-more:hover .columns-product-info-read-more-label::after {
+  transform: scaleX(1);
+}
+
+/* image-only column (generic columns fallback) */
+.columns-product-info .columns-product-info-img-col img {
+  display: block;
+  width: 100%;
+}
+
+@media (width >= 900px) {
+  .columns-product-info > div {
+    grid-template:
+      "heading price" auto
+      "description actions" auto
+      "description features" auto
+      "description ." 1fr / minmax(0, 1fr) minmax(0, 410px);
+    column-gap: 96px;
+  }
+
+  .columns-product-info .columns-product-info-title {
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+
+  .columns-product-info .columns-product-info-subtitle {
+    margin-top: 8px;
+  }
+
+  .columns-product-info .columns-product-info-price {
+    place-self: center end;
+    font-size: 34px;
+    line-height: 37.4px;
+    text-align: right;
+  }
+
+  .columns-product-info .columns-product-info-features {
+    flex-flow: row wrap;
+    margin-bottom: 0;
+  }
+
+  .columns-product-info .columns-product-info-feature {
+    flex: 1 1 0;
+  }
+
+  .columns-product-info .columns-product-info-feature:not(:last-child) {
+    border-bottom: 0;
+    border-right: 1px solid rgb(207 207 207);
+  }
+}

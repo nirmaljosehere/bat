@@ -1,0 +1,23 @@
+{
+  "variantName": "columns-product-info",
+  "baseBlock": "columns",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Product summary shown beside the gallery: product copy on the left, price, add-to-basket CTA and icon feature pills on the right",
+    "summary": "Two-column product summary: title/description left, price + full-width CTA + icon pills right; stacks on mobile"
+  },
+  "contentPattern": {
+    "summary": "Side-by-side product summary: title, subtitle, description (left) and price, Add to basket CTA, 2 icon feature pills (right)",
+    "structure": "one row, two cells; cell 1: rating text, H1 product title, subtitle paragraph, description paragraphs; cell 2: price paragraph, CTA link (rendered as a full-width button), one paragraph per feature pill (icon image + label)"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": [
+    {
+      "url": "https://www.vuse.com/en-gb/products/vuse-ultra-device-mclaren",
+      "section": "section-2",
+      "selector": "#shopify-section-template--19268937547938__main"
+    }
+  ],
+  "reuseGuidance": "Use for product detail summaries pairing descriptive copy with a purchase panel. For generic side-by-side text/image layouts use the base columns block."
+}

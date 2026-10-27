@@ -1,0 +1,191 @@
+/* hero-foreground: values from source .content-block-f (vuse.com) computed styles */
+
+/* full-bleed: release the section content max-width */
+main .section > .hero-foreground-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+.hero-foreground {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: transparent;
+  color: rgb(255 255 255);
+}
+
+/* row 1: background video / poster image */
+.hero-foreground .hero-foreground-background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  height: 100%;
+}
+
+.hero-foreground .hero-foreground-background > div,
+.hero-foreground .hero-foreground-background picture {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-foreground .hero-foreground-background p {
+  margin: 0;
+}
+
+.hero-foreground .hero-foreground-background img,
+.hero-foreground .hero-foreground-background video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* row 2: foreground image + text (source __inner / __content) */
+.hero-foreground .hero-foreground-content {
+  position: relative;
+  padding-inline: 24px;
+}
+
+.hero-foreground .hero-foreground-content > div {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 62px;
+  box-sizing: border-box;
+}
+
+.hero-foreground .hero-foreground-image {
+  width: 100%;
+  max-width: 100%;
+}
+
+.hero-foreground .hero-foreground-image picture {
+  display: block;
+  max-width: 100%;
+}
+
+.hero-foreground .hero-foreground-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: 200px;
+  margin-inline: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+}
+
+.hero-foreground .hero-foreground-text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+}
+
+.hero-foreground .hero-foreground-text h2 {
+  margin: 0;
+  color: rgb(255 255 255);
+  font-family: var(--heading-font-family);
+  font-size: 34px;
+  font-weight: 200;
+  line-height: 37.4px;
+}
+
+.hero-foreground .hero-foreground-text h2 strong,
+.hero-foreground .hero-foreground-text h2 b,
+.hero-foreground .hero-foreground-text .hero-foreground-heading-emphasis {
+  font-weight: 400;
+}
+
+.hero-foreground .hero-foreground-copy {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.hero-foreground .hero-foreground-copy p {
+  margin: 0;
+  color: rgb(255 255 255);
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 20.8px;
+}
+
+.hero-foreground .hero-foreground-copy .button-container {
+  display: block;
+  width: 100%;
+}
+
+main .hero-foreground .hero-foreground-copy a.button:any-link {
+  width: 100%;
+}
+
+@media (width >= 768px) {
+  .hero-foreground .hero-foreground-content {
+    padding-inline: 36px;
+  }
+
+  .hero-foreground .hero-foreground-content > div {
+    padding-bottom: 36px;
+  }
+
+  .hero-foreground .hero-foreground-copy .button-container {
+    width: auto;
+  }
+
+  main .hero-foreground .hero-foreground-copy a.button:any-link {
+    width: auto;
+  }
+}
+
+@media (width >= 1024px) {
+  .hero-foreground .hero-foreground-content > div {
+    max-width: 1680px;
+    margin-inline: auto;
+  }
+
+  .hero-foreground .hero-foreground-image,
+  .hero-foreground .hero-foreground-text {
+    max-width: 700px;
+  }
+
+  .hero-foreground .hero-foreground-text h2 {
+    font-size: 44px;
+    line-height: 48.4px;
+  }
+}
+
+@media (width >= 1440px) {
+  .hero-foreground .hero-foreground-text {
+    flex-direction: row;
+    gap: 36px;
+  }
+
+  .hero-foreground .hero-foreground-text h2 {
+    min-width: 50%;
+  }
+
+  .hero-foreground .hero-foreground-image,
+  .hero-foreground .hero-foreground-text {
+    max-width: 850px;
+  }
+}
+
+@media (width >= 1920px) {
+  .hero-foreground .hero-foreground-image,
+  .hero-foreground .hero-foreground-text {
+    max-width: 1100px;
+  }
+}

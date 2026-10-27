@@ -1,0 +1,15 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "bat": {
+      "previewOrg": "nirmaljosehere",
+      "previewSite": "bat",
+      "contentHostUrl": "author-p189874-e1977911.adobeaemcloud.com",
+      "aemSitePath": "/content/vuse",
+      "aemAssetsFolderPath": "/content/dam/vuse",
+      "aemSiteName": "vuse",
+      "aemSiteTitle": "vuse",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

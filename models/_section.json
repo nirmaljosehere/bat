@@ -59,7 +59,13 @@
         "table",
         "text",
         "title",
-        "video"
+        "video",
+        "accordion-load-more",
+        "carousel-gallery",
+        "columns-product-info",
+        "hero-foreground",
+        "tabs-product-cards",
+        "tabs-tile-carousel"
       ]
     }
   ]

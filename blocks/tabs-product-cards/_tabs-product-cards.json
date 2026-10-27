@@ -1,0 +1,79 @@
+{
+  "definitions": [
+    {
+      "title": "Tabs Product Cards",
+      "id": "tabs-product-cards",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Tabs Product Cards",
+              "filter": "tabs-product-cards"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Tabs Product Cards Item",
+      "id": "tabs-product-cards-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Tabs Product Cards Item",
+              "model": "tabs-product-cards-item",
+              "title": "Tab Name"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "tabs-product-cards-item",
+      "fields": [
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "title",
+          "value": "",
+          "label": "Tab Title",
+          "description": "Items with the same tab title are grouped into one tab"
+        },
+        {
+          "component": "reference",
+          "valueType": "string",
+          "name": "image",
+          "label": "Image",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "imageAlt",
+          "value": "",
+          "label": "Image Alt Text"
+        },
+        {
+          "component": "richtext",
+          "name": "text",
+          "value": "",
+          "label": "Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "tabs-product-cards",
+      "components": [
+        "tabs-product-cards-item"
+      ]
+    }
+  ]
+}

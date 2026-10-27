@@ -1,0 +1,23 @@
+{
+  "variantName": "tabs-product-cards",
+  "baseBlock": "tabs",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Pill tabs (e.g. Find a Flavour / More from Vuse) with a per-tab View all link; panels are horizontally scrolling carousels of bordered product cards",
+    "summary": "Pill tabs plus a View all link; panels are horizontal carousels of bordered product cards (badge, price, packshot, name, Add button)"
+  },
+  "contentPattern": {
+    "summary": "Tabs: 'Find a Flavour' (16 product cards) and 'More from Vuse' (20 product cards); each card links to its product detail page; 'View all' link",
+    "structure": "one row per tab; cell 1: tab label; cell 2: panel content as rich text. Optional first paragraph containing only a link = the tab's View all link. Then one product card per image: the packshot image first, followed by badge/price paragraphs, H3 product name and a link to the product detail page"
+  },
+  "options": [],
+  "memberVariantIds": [],
+  "usage": [
+    {
+      "url": "https://www.vuse.com/en-gb/products/vuse-ultra-device-mclaren",
+      "section": "section-6",
+      "selector": "#shopify-section-template--19268937547938__product_card_carousel_9a67xW"
+    }
+  ],
+  "reuseGuidance": "Use for tabbed product listings (cross-sell, flavour pickers) with prices and per-tab View all links. For image tiles with overlaid text use tabs-tile-carousel; for plain tabbed text use the base tabs block."
+}
