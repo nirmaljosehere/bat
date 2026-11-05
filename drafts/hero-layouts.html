@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme" content="velo">
+    <title>VELO x McLaren Hero</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="stylesheet" href="/blocks/hero/hero.css">
+    <script type="module">
+      import decorate from '/blocks/hero/hero.js';
+      import { decorateTemplateAndTheme } from '/scripts/aem.js';
+
+      const parameters = new URLSearchParams(window.location.search);
+      const layouts = ['overlay', 'overlay-center', 'overlay-right', 'image-left',
+        'image-right', 'image-top', 'image-bottom'];
+      const layout = parameters.get('layout');
+      const theme = parameters.get('theme');
+      if (['vuse', 'velo'].includes(theme)) {
+        document.querySelector('meta[name="theme"]').content = theme;
+      }
+      const block = document.querySelector('.hero');
+      if (layouts.includes(layout)) block.classList.add(layout);
+      decorateTemplateAndTheme();
+      decorate(block);
+      block.dataset.blockStatus = 'loaded';
+      document.body.classList.add('appear');
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="section hero-container">
+        <div class="hero-wrapper">
+          <div class="hero" data-block-name="hero">
+            <div>
+              <div>
+                <picture>
+                  <img src="https://gb.velo.com/cdn/shop/files/Content_Block_H___1000_x_1000___1_1_605fefdc-7346-4581-954d-0d0f18140749.png?v=1784280601&amp;width=1000" alt="Orange and black McLaren racing car with a checkered flag" width="1000" height="1000" fetchpriority="high">
+                </picture>
+              </div>
+            </div>
+            <div><div><h1>VELO x McLaren</h1></div></div>
+            <div><div><p>McLaren Mastercard Formula 1 Team partnership.</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div><h2>McLaren Mastercard Formula 1 Team</h2><p>VELO x McLaren.</p></div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -55,3 +55,24 @@ CMS-authored and must be selected separately for each brand.
 Keep the AEM `/conf/vuse` Edge Delivery configuration pointing to this
 `nirmaljosehere/bat` repository: it contains the site's custom blocks.
 Do not replace it with the separate `vuse` boilerplate repository.
+
+## Hero Layouts
+
+The Hero block has **Image**, **Alt**, **Headline**, **Description**, and
+**Layout** fields. Format the headline as a heading in the rich-text editor;
+use H1 for the page's main hero and H2/H3 for subsequent sections.
+
+Layout supports background images with left/center/right text, image left or
+right of text, and image above or below text. Split layouts stack image-first
+on mobile. Images remain uncropped outside background-image layouts.
+
+The original `text` property is retained as Headline, so existing headings,
+paragraphs, links, and authoring attributes are preserved. Existing heroes
+default to the background-image layout. Image and description are optional.
+
+With the local server running, preview the block at
+`/drafts/hero-layouts.html?layout=image-left`. Other layout values are
+`overlay`, `overlay-center`, `overlay-right`, `image-right`, `image-top`, and
+`image-bottom`. Add `&theme=vuse` to check the original brand styling.
+These query parameters are draft-only; production uses authored block classes.
+The draft image is loaded from the reference site's CDN for preview only.

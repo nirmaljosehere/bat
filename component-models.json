@@ -437,8 +437,52 @@
         "component": "richtext",
         "name": "text",
         "value": "",
-        "label": "Text",
+        "label": "Headline",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "description",
+        "value": "",
+        "label": "Description",
+        "valueType": "string"
+      },
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Layout",
+        "valueType": "string",
+        "value": "overlay",
+        "options": [
+          {
+            "name": "Image Background - Text Left",
+            "value": "overlay"
+          },
+          {
+            "name": "Image Background - Text Center",
+            "value": "overlay-center"
+          },
+          {
+            "name": "Image Background - Text Right",
+            "value": "overlay-right"
+          },
+          {
+            "name": "Image Left - Text Right",
+            "value": "image-left"
+          },
+          {
+            "name": "Image Right - Text Left",
+            "value": "image-right"
+          },
+          {
+            "name": "Image Above Text",
+            "value": "image-top"
+          },
+          {
+            "name": "Image Below Text",
+            "value": "image-bottom"
+          }
+        ]
       }
     ]
   },
