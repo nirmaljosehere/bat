@@ -47,6 +47,37 @@
   --header-height: var(--nav-height);
 }
 
+body.velo {
+  --light-color: #f1f4f8;
+  --dark-color: #4f5257;
+  --text-color: #101010;
+  --link-color: #254aa2;
+  --link-hover-color: #1c387c;
+  --overlay-background-color: rgb(16 16 16 / 60%);
+  --button-primary-background: #254aa2;
+  --button-primary-hover-background: #1c387c;
+  --border-color: #dce1e7;
+  --brand-color: #00557d;
+  --brand-accent-color: #ff8200;
+  --body-font-family: 'Velo WWangle', mundial, mundial-fallback, sans-serif;
+  --heading-font-family: var(--body-font-family);
+  --body-font-weight: 400;
+  --heading-font-weight: 700;
+  --strong-font-weight: 700;
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 30px;
+  --heading-font-size-l: 26px;
+  --heading-font-size-m: 22px;
+  --heading-font-size-s: 20px;
+  --heading-font-size-xs: 18px;
+  --button-radius: 50px;
+  --nav-height: 80px;
+  --header-height: var(--nav-height);
+}
+
 @media (width >= 900px) {
   :root {
     /* heading sizes (desktop) */
@@ -58,5 +89,11 @@
     --heading-font-size-xs: 16px;
     --section-spacing: 48px;
     --content-padding: 62px;
+  }
+
+  body.velo {
+    --heading-font-size-xxl: 45px;
+    --heading-font-size-xl: 36px;
+    --heading-font-size-l: 28px;
   }
 }

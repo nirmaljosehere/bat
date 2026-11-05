@@ -20,6 +20,23 @@
         "name": "keywords",
         "multi": true,
         "label": "Keywords"
+      },
+      {
+        "component": "select",
+        "valueType": "string",
+        "name": "theme",
+        "label": "Theme",
+        "value": "vuse",
+        "options": [
+          {
+            "name": "Vuse",
+            "value": "vuse"
+          },
+          {
+            "name": "VELO",
+            "value": "velo"
+          }
+        ]
       }
     ]
   },

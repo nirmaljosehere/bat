@@ -266,6 +266,11 @@ main > .section.columns-product-info-container {
   padding: 24px 0;
 }
 
+body.velo main > .section.papaya {
+  background-color: var(--brand-accent-color);
+  color: var(--text-color);
+}
+
 main > .section.accordion-load-more-container {
   padding: 62px 0;
 }

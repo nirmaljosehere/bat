@@ -320,3 +320,30 @@ header .breadcrumbs ol li[aria-current] {
     padding: 0 32px;
   }
 }
+
+body.velo header .nav-wrapper {
+  background-color: var(--brand-color);
+  color: var(--background-color);
+}
+
+body.velo header nav .nav-hamburger button {
+  background-color: transparent;
+}
+
+body.velo header nav .nav-sections .default-content-wrapper > ul > li > ul {
+  color: var(--text-color);
+}
+
+body.velo header nav .nav-tools .icon img {
+  filter: brightness(0) invert(1);
+}
+
+body.velo header .breadcrumbs ol li,
+body.velo header .breadcrumbs ol li[aria-current] {
+  color: var(--background-color);
+}
+
+body.velo header a:focus-visible,
+body.velo header button:not(:disabled):focus-visible {
+  outline-color: var(--background-color);
+}

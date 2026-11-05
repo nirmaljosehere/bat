@@ -1,2 +1,18 @@
 /* Mundial (200/400/600/700) from the source site's Adobe Fonts kit */
 @import url('https://use.typekit.net/ygv6cyi.css');
+
+@font-face {
+	font-family: 'Velo WWangle';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url('../fonts/velo-wwangle-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Velo WWangle';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url('../fonts/velo-wwangle-bold.woff2') format('woff2');
+}

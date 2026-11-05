@@ -34,3 +34,24 @@ npm run lint
 1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
 1. Open the `{repo}` directory in your favorite IDE and start coding :)
+
+## Page Themes
+
+The existing Vuse theme remains the default. Select **Vuse** or **VELO** in
+the page-level **Theme** field in Universal Editor after deploying the
+updated component models. Preview/publish the page to deliver the metadata.
+
+AEM emits `<meta name="theme" content="velo">` for VELO pages. The existing
+page decoration applies `body.velo` before content loads; pages without
+theme metadata retain Vuse styling. The VELO overrides live in
+`styles/brand.css` and reuse the existing blocks and button styles.
+
+VELO uses teal navigation/footer, blue pill buttons, and local Velo WWangle
+regular/bold fonts. An authored `papaya` section style adds an orange band
+only on VELO pages. The fonts were sourced from VELO's published assets;
+confirm usage rights before publishing. Logos, images, and copy remain
+CMS-authored and must be selected separately for each brand.
+
+Keep the AEM `/conf/vuse` Edge Delivery configuration pointing to this
+`nirmaljosehere/bat` repository: it contains the site's custom blocks.
+Do not replace it with the separate `vuse` boilerplate repository.

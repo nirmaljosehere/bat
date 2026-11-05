@@ -18,3 +18,16 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
+body.velo footer {
+  background-color: var(--brand-color);
+  color: var(--background-color);
+}
+
+body.velo footer .footer a:any-link {
+  color: inherit;
+}
+
+body.velo footer .footer a:focus-visible {
+  outline-color: var(--background-color);
+}
