@@ -17,12 +17,16 @@
       const layouts = ['overlay', 'overlay-center', 'overlay-right', 'image-left',
         'image-right', 'image-top', 'image-bottom'];
       const layout = parameters.get('layout');
+      const background = parameters.get('background');
       const theme = parameters.get('theme');
       if (['vuse', 'velo'].includes(theme)) {
         document.querySelector('meta[name="theme"]').content = theme;
       }
       const block = document.querySelector('.hero');
       if (layouts.includes(layout)) block.classList.add(layout);
+      if (['white', 'black', 'blue'].includes(background)) {
+        block.firstElementChild.firstElementChild.lastElementChild.textContent = background;
+      }
       decorateTemplateAndTheme();
       decorate(block);
       block.dataset.blockStatus = 'loaded';
@@ -39,6 +43,7 @@
                 <picture>
                   <img src="https://gb.velo.com/cdn/shop/files/Content_Block_H___1000_x_1000___1_1_605fefdc-7346-4581-954d-0d0f18140749.png?v=1784280601&amp;width=1000" alt="Orange and black McLaren racing car with a checkered flag" width="1000" height="1000" fetchpriority="high">
                 </picture>
+                <p>white</p>
               </div>
             </div>
             <div><div><h1>VELO x McLaren</h1></div></div>

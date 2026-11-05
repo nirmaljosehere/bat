@@ -59,7 +59,9 @@ Do not replace it with the separate `vuse` boilerplate repository.
 ## Hero Layouts
 
 The Hero block has **Image**, **Alt**, **Headline**, **Description**, and
-**Layout** fields. Format the headline as a heading in the rich-text editor;
+**Layout** fields, plus **Background Color** (White, Black, or Blue).
+White uses dark text; Black and VELO Blue (`#00557d`) use white text.
+Format the headline as a heading in the rich-text editor;
 use H1 for the page's main hero and H2/H3 for subsequent sections.
 
 Layout supports background images with left/center/right text, image left or
@@ -74,5 +76,9 @@ With the local server running, preview the block at
 `/drafts/hero-layouts.html?layout=image-left`. Other layout values are
 `overlay`, `overlay-center`, `overlay-right`, `image-right`, `image-top`, and
 `image-bottom`. Add `&theme=vuse` to check the original brand styling.
-These query parameters are draft-only; production uses authored block classes.
+Add `&background=white`, `&background=black`, or `&background=blue` to compare
+backgrounds. Background-image layouts keep white text over the image; the
+selected color sits behind it and is most visible in split/stacked layouts.
+These query parameters are draft-only; production uses authored hero fields
+and block classes.
 The draft image is loaded from the reference site's CDN for preview only.

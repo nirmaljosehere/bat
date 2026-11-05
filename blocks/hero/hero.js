@@ -1,5 +1,16 @@
 export default function decorate(block) {
   const cells = [...block.children].flatMap((row) => [...row.children]);
+  const backgroundElement = cells[0]?.lastElementChild;
+  const background = backgroundElement?.textContent.trim().toLowerCase();
+  const hasBackground = ['white', 'black', 'blue'].includes(background)
+    && (cells.length > 1 || cells[0].querySelector('picture, img')
+      || backgroundElement.dataset.aueProp === 'image_background')
+    && backgroundElement.matches('p')
+    && !backgroundElement.querySelector('picture, img');
+  if (hasBackground) {
+    block.dataset.background = background;
+    backgroundElement.remove();
+  }
   const media = cells.find((cell) => cell.querySelector('picture, img'));
   const content = document.createElement('div');
   content.className = 'hero-content';

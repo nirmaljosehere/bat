@@ -13,6 +13,21 @@
   color: var(--text-color);
 }
 
+.hero[data-background='white'] {
+  background-color: #fff;
+  color: #101010;
+}
+
+.hero[data-background='black'] {
+  background-color: #101010;
+  color: #fff;
+}
+
+.hero[data-background='blue'] {
+  background-color: #00557d;
+  color: #fff;
+}
+
 .hero.hero-overlay.hero-has-image {
   color: var(--background-color);
 }

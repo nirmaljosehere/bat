@@ -483,6 +483,27 @@
             "value": "image-bottom"
           }
         ]
+      },
+      {
+        "component": "select",
+        "name": "image_background",
+        "label": "Background Color",
+        "valueType": "string",
+        "value": "white",
+        "options": [
+          {
+            "name": "White",
+            "value": "white"
+          },
+          {
+            "name": "Black",
+            "value": "black"
+          },
+          {
+            "name": "Blue",
+            "value": "blue"
+          }
+        ]
       }
     ]
   },
